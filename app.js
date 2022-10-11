@@ -14,8 +14,6 @@ app.set('views', './views');
 app.set('view engine', 'ejs');
 
 // Render file
-app.get('/', (req, res) => {
-  
   // Sending our index.html file as 
   // response. In path.join() method
   // __dirname is the directory where
@@ -25,9 +23,21 @@ app.get('/', (req, res) => {
 
 //   Render
 //   res.sendFile(path.join(__dirname, '/views/index.html'));
+
+//Trang home
+app.get('/', (req, res) => {
 res.sendFile(path.join(__dirname, '/views/index.html'))
 
 });
+// Trang blog
+app.get('/blog',(req,res)=>{
+  res.sendFile(path.join(__dirname, '/views/blog.html'))
+})
+
+// Trang contact
+app.get('/contact',(req,res)=>{
+  res.sendFile(path.join(__dirname, '/views/contact.html'))
+})
 app.listen(3000, () => {
     console.log('Server is up on port 3000');
   }); 
