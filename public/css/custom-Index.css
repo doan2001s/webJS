@@ -151,4 +151,5 @@
 
 .quicklink-imgtext_title:hover {
    text-decoration: underline;
+   transition: 2s;
 }
