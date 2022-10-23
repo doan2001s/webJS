@@ -38,6 +38,10 @@ app.get('/blog',(req,res)=>{
 app.get('/contact',(req,res)=>{
   res.sendFile(path.join(__dirname, '/views/contact.html'))
 })
+// Trang shop
+app.get('/shop',(req,res)=>{
+  res.sendFile(path.join(__dirname, '/views/shop.html'))
+})
 app.listen(3000, () => {
     console.log('Server is up on port 3000');
   }); 

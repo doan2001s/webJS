@@ -68,14 +68,14 @@
 .quicklink-component {
     width: 100%;
     height: 320px;
-    background-color: black;
+    /* background-color: black; */
 }
 
 .desktop-quicklink {
     margin: auto;
     width: 94%;
     height: 320px;
-    background-color: brown;
+    /* background-color: brown; */
 }
 
 .quicklink-heading {
